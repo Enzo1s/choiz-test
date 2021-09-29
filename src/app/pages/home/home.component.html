@@ -1,0 +1,16 @@
+<div *ngIf="!viewModal" class="scroll-modal">
+    <div class="window-modal">
+        <app-modal (close)="viewModal = $event"></app-modal>
+    </div>
+</div>
+<div style="width: 100%; margin: 0;">
+    <app-header></app-header>
+    <div id="consultation" class="consult">
+        <p class="consult-text">Las mejores expertas en ginecología del país están a tu disposición para conversar sin
+            que tengas que salir de tu casa.</p>
+        <button class="consult-btn text" style="grid-column-start: 5;" (click)="consult()">Agendar una consulta</button>
+    </div>
+    <app-list-medications id="medicine"></app-list-medications>
+    <app-faqs id="faqs"></app-faqs>
+    <app-footer id="footer"></app-footer>
+</div>

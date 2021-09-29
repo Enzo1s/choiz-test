@@ -1,0 +1,15 @@
+<thead style="margin-top: 1rem;">
+    <tr class="title-table"><p >{{tableTitle |titlecase }}</p></tr>
+    <tr class="table-container table-header">
+        <th>Marcas que ofrecemos</th>
+        <th>Laboratorio</th>
+        <th>Precio <small style="font-weight: 500;">(sin cobertura médica)</small></th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let product of products" class="table-container table-body text-body">
+        <td>{{product.brand |uppercase}}</td>
+        <td>{{product.laboratory}}</td>
+        <td>{{product.price|currency:'ARS':'symbol-narrow'}}</td>
+    </tr>
+</tbody>

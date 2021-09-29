@@ -1,0 +1,28 @@
+.text-nav
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 40px
+.link
+    text-decoration: none
+.nav
+    justify-content: space-between
+    list-style: none
+
+.nav-item-container
+    display: grid
+    grid-template-columns: repeat(6,1fr)
+    grid-column-start: 3
+    grid-column-end: 13
+.btn
+    background-color: rgba(255, 255, 255, 0.1)
+    border: 1px solid #fff
+    border-radius: 4px
+    text-align: center
+    width: auto
+    flex-wrap: nowrap
+
+@media screen and ( max-width: 1180px )
+    .nav-item-container
+        grid-column-start: 3
+    

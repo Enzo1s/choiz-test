@@ -1,0 +1,53 @@
+<div class="modal-container modal-grid">
+    <a class="close" (click)="closeModal()"><img src="../../../assets/images/close.svg" alt="close Dialog"
+         ></a>
+    <div style="text-align: center;
+        grid-row-start: 2;
+        align-items: start;">
+        <p class="modal-title">{{title}}</p>
+    </div>
+    <div class="container-img">
+        <img src="../../../assets/images/text-baloon-question.svg" class="modal-img" alt=""
+            style="grid-column-start: 2;">
+        <hr class="hr">
+        <img src="../../../assets/images/hand.svg" class="modal-img" alt="" style="grid-column-start: 4;">
+        <hr class="hr">
+        <img src="../../../assets/images/text-baloon-video.svg" class="modal-img" alt="" style="grid-column-start: 6;">
+    </div>
+    <div class="message">
+        <div class="box-instruction" style="grid-column-start: 2;">
+            <span class="step">1.</span><br>
+            <p class="instruction">Completás algunas preguntas breves y nos contás el motivo
+                de la consulta.</p>
+        </div>
+        <div class="box-instruction" style="grid-column-start: 4;width: 18rem;">
+            <span class="step">2.</span><br>
+            <p class="instruction">Te contactamos por y coordinamos el pago para reservar la fecha.</p>
+        </div>
+        <div class="box-instruction" style="grid-column-start: 6;">
+            <span class="step">3.</span><br>
+            <p class="instruction">Tenés la videollamada con tu doctora, desde donde estés y sin límite de tiempo.</p>
+        </div>
+    </div>
+    <div class="message" style="grid-row-start: 5; margin-top: 1rem;">
+        <div class="box-instruction" style="grid-column-start: 2;">
+            <div>
+                <p class="leyend">Vamos a elegir la doctora adecuada según su
+                    especialidad y tu necesidad.</p>
+            </div>
+        </div>
+        <div class="box-instruction" style="grid-column-start: 4;width: 18rem;">
+            <div>
+                <p class="leyend">Si tenés Swiss Medical es GRATIS* y si no, podes pedir reintegro</p>
+                <br>
+                <small class="leyend-small">*Excepto para planes que
+                    requieren copago</small>
+            </div>
+        </div>
+        <div class="box-instruction" style="grid-column-start: 6;">
+            <div>
+                <p class="leyend">¡Dura lo que vos necesites!</p>
+            </div>
+        </div>
+    </div>
+</div>

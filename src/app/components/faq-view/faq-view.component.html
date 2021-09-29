@@ -1,0 +1,7 @@
+<div class="faq-view">
+    <div class="accordion"><p class="title-faq">{{faq.title}}</p>
+    <a (click)="open()"><img src="../../../assets/images/arrow.svg" alt="close faq"
+        [ngStyle]="{'transform': view === true ? 'rotate(0deg)': 'rotate(180deg)'}"
+        ></a></div>
+    <p class="description-faq" *ngIf="view">{{faq.description}}</p>
+</div>
