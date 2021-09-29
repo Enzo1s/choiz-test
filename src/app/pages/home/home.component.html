@@ -6,8 +6,7 @@
 <div style="width: 100%; margin: 0;">
     <app-header></app-header>
     <div id="consultation" class="consult">
-        <p class="consult-text">Las mejores expertas en ginecología del país están a tu disposición para conversar sin
-            que tengas que salir de tu casa.</p>
+        <p class="consult-text">{{message}}</p>
         <button class="consult-btn text" style="grid-column-start: 5;" (click)="consult()">Agendar una consulta</button>
     </div>
     <app-list-medications id="medicine"></app-list-medications>

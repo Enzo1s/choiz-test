@@ -17,6 +17,11 @@ export class TableProductComponent implements OnInit {
     this.typeSelect()
   }
 
+  /**
+   * @function typeSelect
+   * Assign the title to each table according to the type 
+   * variable obtained from the component properties
+   */
   typeSelect() {
     switch (this.type) {
       case 'pills':

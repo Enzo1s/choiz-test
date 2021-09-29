@@ -17,6 +17,10 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * @function closeModal
+   * Emits a boolean event to the parent to close the dialog
+   */
   closeModal(){
     this.close.emit(true)
   }

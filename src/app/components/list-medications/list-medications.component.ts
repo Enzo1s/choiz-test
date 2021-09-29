@@ -20,14 +20,22 @@ export class ListMedicationsComponent implements OnInit {
   constructor(private medicineStore: Store<IState>) { }
 
   ngOnInit(): void {
-   this.medicineStore.dispatch(loadMedicines());
-   this.medicineStore.select('medicineReducer').subscribe((res) => {
-     if(typeof res.medicines !== 'undefined') {
-       this.data = res.medicines['data']
-       this.pills = this.data.pills
-       this.rings = this.data.rings
-       this.patches = this.data.patches
-     }
-   })
+this.getMedicine()
+  }
+
+  /**
+   * @function getMedicine
+   * get all medicines by implementing redux
+   */
+  getMedicine() {
+    this.medicineStore.dispatch(loadMedicines());
+    this.medicineStore.select('medicineReducer').subscribe((res) => {
+      if (typeof res.medicines !== 'undefined') {
+        this.data = res.medicines['data']
+        this.pills = this.data.pills
+        this.rings = this.data.rings
+        this.patches = this.data.patches
+      }
+    })
   }
 }

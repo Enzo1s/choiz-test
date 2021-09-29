@@ -16,16 +16,19 @@ export class FaqsComponent implements OnInit {
   constructor(private faqStore: Store<IState>) { }
 
   ngOnInit(): void {
+  this.getFaqs()  
+  }
+
+  /**
+   * @function getFaqs
+   * get all the faq's by implementing redux
+   */
+  getFaqs(){
     this.faqStore.dispatch(loadFaqs());
     this.faqStore.select('faqReducer').subscribe((res) => {
       if(typeof res.faqs !== 'undefined') {
         this.faqs= res.faqs['data']
-        console.log(this.faqs)
       }
     })
-  }
-
-  open(){
-    this.view = !this.view
   }
 }

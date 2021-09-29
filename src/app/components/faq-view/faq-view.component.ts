@@ -15,6 +15,10 @@ export class FaqViewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * @function open
+   * show hide answer
+   */
   open(){
     this.view = !this.view
   }
